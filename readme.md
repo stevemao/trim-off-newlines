@@ -1,6 +1,6 @@
 # trim-off-newlines [![Build Status](https://travis-ci.org/stevemao/trim-off-newlines.svg?branch=master)](https://travis-ci.org/stevemao/trim-off-newlines)
 
-> Similar to String#trim() but removes only newlines
+> Similar to [`String#trim()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim) but removes only newlines
 
 
 ## Install
