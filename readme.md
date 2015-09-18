@@ -20,6 +20,12 @@ trimOffNewlines('\n\nunicorns\n\n');
 ```
 
 
+## Related
+
+- [`trim-left`](https://github.com/sindresorhus/trim-left) - Similar to `String#trim()` but removes only whitespace on the left
+- [`trim-right`](https://github.com/sindresorhus/trim-right) - Similar to `String#trim()` but removes only whitespace on the right
+
+
 ## License
 
 MIT © [Steve Mao](https://github.com/stevemao)
