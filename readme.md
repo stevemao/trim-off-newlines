@@ -16,7 +16,7 @@ $ npm install --save trim-off-newlines
 var trimOffNewlines = require('trim-off-newlines');
 
 trimOffNewlines('\n\nunicorns\n\n');
-//=> 'nunicorns'
+//=> 'unicorns'
 ```
 
 
