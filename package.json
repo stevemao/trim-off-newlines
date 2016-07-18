@@ -1,6 +1,6 @@
 {
   "name": "trim-off-newlines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Similar to String#trim() but removes only newlines",
   "license": "MIT",
   "repository": "stevemao/trim-off-newlines",
