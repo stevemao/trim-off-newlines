@@ -19,3 +19,10 @@ it('should trim off \\r\\n', function () {
 	assert.strictEqual(trimOffNewlines('\r\nunicorns\r\n'), 'unicorns');
 	assert.strictEqual(trimOffNewlines('unicorns\r\n\r\n\r\n\r\n\r\n\r\n'), 'unicorns');
 });
+
+it('should not be susceptible to exponential backtracking', function () {
+	var start = Date.now();
+	trimOffNewlines('a' + '\r\n'.repeat(1000) + 'a');
+	var end = Date.now();
+	assert.ok(end - start < 1000, 'took too long, probably susceptible to ReDOS');
+});
