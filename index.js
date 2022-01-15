@@ -1,14 +1,16 @@
 'use strict';
 
-var regex = /[^\r\n]/;
-
 module.exports = function (str) {
-	var result = str.match(regex);
-	if (!result) {
+	var firstIndex = 0;
+	while (str[firstIndex] === '\r' || str[firstIndex] === '\n') {
+		firstIndex++;
+	}
+
+	var lastIndex = str.length - 1;
+	if (firstIndex - 1 === lastIndex) {
 		return '';
 	}
-	var firstIndex = result.index;
-	var lastIndex = str.length - 1;
+
 	while (str[lastIndex] === '\r' || str[lastIndex] === '\n') {
 		lastIndex--;
 	}
